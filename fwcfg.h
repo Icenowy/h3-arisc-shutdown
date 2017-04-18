@@ -29,7 +29,7 @@ struct firmware_config {
 	 */
 	int button_pressed_voltage;
 
-	int reserved[0x3d];
+	int reserved[0x3c];
 };
 
 extern struct firmware_config fwcfg;
