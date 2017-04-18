@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-#define TIMER_FREQUENCY 300000000 // 300MHz
+#define TIMER_FREQUENCY 24000000 /* 24MHz */
 
 void delay_ticks(uint32_t ticks);
 void timer_start(void);
