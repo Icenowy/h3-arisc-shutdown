@@ -6,6 +6,7 @@
 #include "clk.h"
 #include "timer.h"
 #include "fwcfg.h"
+#include "cpux.h"
 
 void enable_caches(void)
 {
@@ -75,6 +76,13 @@ int main(void)
 	clk_set_rate(CLK_CPUS, 24000000);
 
 	puts("\nOpenRISC FW 1.0\n");
+
+	printf("Shutting down CPUX cores: ");
+	for (int i = 0; i < 4; i++) {
+		cpux_shutdown(i);
+		printf("%d ", i);
+	};
+	printf("\n");
 
 	dump_config();
 
