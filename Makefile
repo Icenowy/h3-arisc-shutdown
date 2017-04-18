@@ -39,7 +39,6 @@ start.o: start.S
 
 clean:
 	rm -rf $(COBJ) start.o arisc-fw arisc-fw.code arisc-fw.as
-	make -C boot clean
 
 load: arisc-fw.code
 	$(FEL) write 0x40000 $<

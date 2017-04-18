@@ -60,6 +60,9 @@
 //
 
 	.org 0x4000
+	.global fwcfg
+fwcfg:
+	#include "default_config.S"
 	.align 4
 
 // 
