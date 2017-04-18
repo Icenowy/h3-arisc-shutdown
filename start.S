@@ -56,7 +56,7 @@
 	EXCEPTION_ENTRY_POINT(0xe00, trap_handler)
 
 //
-// ARM CPU "boot loader" that resets the OpenRISC core in H3
+// Firmware configuration
 //
 
 	.org 0x4000
