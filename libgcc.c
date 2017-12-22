@@ -85,7 +85,7 @@ uint64_t __udivdi3(uint64_t a, uint64_t b)
 	return __udivmoddi4(a, b, NULL);
 }
 
-int64_t __divsi3(int32_t num, int32_t den)
+int32_t __divsi3(int32_t num, int32_t den)
 {
 	int minus = 0;
 	int32_t v;
